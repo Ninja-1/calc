@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-ua-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calc</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <p class="title">
+      КАЛЬКУЛЯТОР
+    </p>
+    
+    <div id="tabs">
+      <div class="tab whiteborder">Прямоугольник</div>
+      <div class="tab">Треугольник</div>
+      <div class="tab">Круг</div>
+      
+    
+    
+    <div class="tabContent"> <!--было calc-->
+      <p class="subtitle">Найти площадь прямоугольника</p>
+      <p class="source">Ввести данные</p>
+      
+      <div class="inner">
+        <p class="sign">a = <input type="text" id="a" >[ед.изм]</p>
+        <p class="sign">b = <input type="text" id="b" >[ед.изм]</p>
+      </div>
+      
+      <img src="./img/Sqwea.png"  alt="">
+      
+      <button id="myBtnR">Найти</button>
+      
+      <p class="source">Решение</p>
+      <p class="description">Площадь прямоугольника находим по формуле:</p>
+      <div class="result">       
+        <p class="res" id="area">S = a * b [ед.изм<sup>2</sup>]</p>
+      </div>      
+    </div>
+    
+    
+    <div class="tabContent"> <!--было calc-->
+      <p class="subtitle">Найти площадь треугольника</p>
+      <p class="source">Ввести данные</p>
+      
+      <div class="inner">
+        <p class="sign">a = <input type="text" id="aa" >[ед.изм]</p>
+        <p class="sign">h = <input type="text" id="h" >[ед.изм]</p>
+      </div>
+      
+      <img src="./img/Tr.png" width="130px" alt="">
+      
+      <button id="myBtnT">Найти</button>
+      
+      <p class="source">Решение</p>
+      <p class="description">Площадь треугольника находим по формуле:</p>
+      <div class="result">       
+        <p class="res" id="areaT">S = 0.5 * a * h [ед.изм<sup>2</sup>]</p>
+      </div>      
+    </div>
+    
+    
+    <div class="tabContent"> <!--было calc-->
+      <p class="subtitle">Найти площадь круга</p>
+      <p class="source">Ввести данные</p>
+      
+      <div class="inner">
+        <p class="sign">D = <input type="text" id="d" >[ед.изм]</p>
+        <!--<p class="sign">b = <input type="text" id="b" >[ед.изм]</p>-->
+      </div>
+      
+      <img src="./img/Ring.png" alt="">
+      
+      <button id="myBtnO">Найти</button>
+      
+      <p class="source">Решение</p>
+      <p class="description">Площадь круга находим по формуле:</p>
+      <div class="result">       
+        <p class="res" id="areaO">S = Пи * D<sup>2</sup> / 4 [ед.изм<sup>2</sup>]</p>
+      </div>      
+    </div>
+    
+    
+    
+    
+    
+    </div>
+    
+    
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
