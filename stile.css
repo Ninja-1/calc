@@ -6,8 +6,7 @@ body {
   background-color: #f4f4f4;  
 }
 #tabs .tab {
-  margin-top: 20px;
-  /*width: 200px;*/
+  margin-top: 20px;  
   background-color: #C6C6C6;
   border-radius: 15px 15px 0 0;
   display: inline-block;
@@ -16,36 +15,33 @@ body {
   position: relative;
   z-index: 5;
   font-family: Sans-serif; 
-  font-size: 24px;  
+  font-size: calc(16px + (24 - 16) * ((100vw - 360px) / (1600 - 360)));  
 }
 #tabs .whiteborder {
   border: 2px solid #E9E9E9;
   border-bottom: 2px solid #C6C6C6;
   border-radius: 15px 15px 0 0;
-  /*box-shadow: 2px 2px rgba(0,0,0,0.5);*/
 }
 p {
   font-family: Sans-serif; 
-  font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(16px + (24 - 16) * ((100vw - 360px) / (1600 - 360)));
 }
-.container {
-  /*width: 1280px;*/
-  height: 100vh;  
+.container { 
   background-color: #BDD9ED;
   text-align: center;
   margin: auto;
 }
 .title {
   padding: 60px 0 0; 
-  font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(30px + (40 - 30) * ((100vw - 360px) / (1600 - 360)));
   font-weight: 550;
 }
 
-/*было .calc*/
+/**/
 #tabs .tabContent {   
   margin: auto;
   width: calc(360px + (800 - 360) * ((100vw - 360px) / (1600 - 360)));
-  height: 790px;  
+  /*height: 790px;*/  
   background-color: #C6C6C6;
   border: 2px solid #E9E9E9;
   border-radius: 20px;
@@ -54,7 +50,6 @@ p {
   position: relative;
   top: -2px;
   z-index: 1;
-  /*padding: 10px;*/
 }
 #tabs .hide {
   display: none;
@@ -64,41 +59,33 @@ p {
 }
 
 .subtitle {
-  font-size: calc(24px + (24 - 16) * ((100vw - 320px) / (1600 - 320))); 
+  font-size: calc(24px + (24 - 16) * ((100vw - 360px) / (1600 - 360))); 
   font-weight: 600;
-  margin-top: calc(30px + (36 - 30) * ((100vw - 320px) / (1600 - 320)));
+  margin-top: calc(30px + (36 - 30) * ((100vw - 360px) / (1600 - 360)));
 }
 .source {  
   display: flex;
-  margin-left: calc(20px + (100 - 20) * ((100vw - 320px) / (1600 - 320)));
-  margin-top: calc(20px + (40 - 20) * ((100vw - 320px) / (1600 - 320)));
-  /*font-size: 24px;*/
+  margin-left: calc(20px + (100 - 20) * ((100vw - 360px) / (1600 - 360)));
+  margin-top: calc(20px + (40 - 20) * ((100vw - 360px) / (1600 - 360)));  
   letter-spacing: normal;
   text-decoration-line: underline;
 }
-.inner {  
-  /*width: 400px;*/ 
-  margin-left: calc(20px + (100 - 20) * ((100vw - 320px) / (1600 - 320)));
-  margin-top: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320)));
+.inner {
+  margin-left: calc(20px + (100 - 20) * ((100vw - 360px) / (1600 - 360)));
+  margin-top: calc(15px + (20 - 15) * ((100vw - 360px) / (1600 - 360)));
   float: left;
 }
 .sign {
   display: flex;
-  /*margin-left: 150px;*/
-  font-size: calc(18px + (28 - 18) * ((100vw - 320px) / (1600 - 320))); 
+  font-size: calc(18px + (28 - 18) * ((100vw - 360px) / (1600 - 360))); 
   padding-top: 10px;
 }
 button {
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  
   margin-top: 75px;
-  width: calc(160px + (230 - 160) * ((100vw - 320px) / (1600 - 320)));
-  height: calc(45px + (70 - 45) * ((100vw - 320px) / (1600 - 320)));
+  width: calc(160px + (230 - 160) * ((100vw - 360px) / (1600 - 360)));
+  height: calc(45px + (70 - 45) * ((100vw - 360px) / (1600 - 360)));
   border-radius: 35px;
-  font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(20px + (24 - 20) * ((100vw - 360px) / (1600 - 360)));
   background-color: #3E99DB;
   color: aliceblue;
   border-color: #E9E9E9;
@@ -116,30 +103,28 @@ button:hover:focus {
 
 .description {
   display: flex;
-  margin-left: calc(20px + (100 - 20) * ((100vw - 320px) / (1600 - 320)));
+  margin-left: calc(20px + (100 - 20) * ((100vw - 360px) / (1600 - 360)));
   margin-top: 30px;
   font-size: 20px;
 }
 .result {
-  /*margin: auto;*/
-  margin-left: calc(20px + (100 - 20) * ((100vw - 320px) / (1600 - 320)));
-  margin-right: calc(20px + (100 - 20) * ((100vw - 320px) / (1600 - 320)));
+  margin-left: calc(20px + (100 - 20) * ((100vw - 360px) / (1600 - 360)));
+  margin-right: calc(20px + (100 - 20) * ((100vw - 360px) / (1600 - 360)));
   margin-top: 20px;
-  /*width: 600px;*/
-  height: calc(100px + (160 - 100) * ((100vw - 320px) / (1600 - 320)));
+  margin-bottom: calc(20px + (100 - 20) * ((100vw - 360px) / (1600 - 360)));
+  height: calc(100px + (160 - 100) * ((100vw - 360px) / (1600 - 360)));
   background-color: #BDD9ED;
   border: 2px solid;
-  border-radius: calc(30px + (50 - 30) * ((100vw - 320px) / (1600 - 320)));
+  border-radius: calc(30px + (50 - 30) * ((100vw - 360px) / (1600 - 360)));
   border-color: #E9E9E9;
   box-shadow: inset 4px 4px 5px rgba(0,0,0,0.5);  
   
-  /*Для выравнивания по центру входящих в result элкментов*/
+  /*Для выравнивания по центру входящих в result элементов*/
   display: flex;
   align-items: center;
-  /*justify-content: flex-end;*/
 }
 #a, #b, #d, #h, #aa {
-  font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 360px) / (1600 - 360)));
   width: 70px;
   padding: 5px 10px;
   margin-top: -5px;
@@ -151,25 +136,13 @@ button:hover:focus {
 }
 img {
   /*float: right;*/  
-  /*margin-right: calc(20px + (100 - 20) * ((100vw - 320px) / (1600 - 320)));*/
+  /*margin-right: calc(20px + (100 - 20) * ((100vw - 360px) / (1600 - 320)));*/
   margin-top: -10px;
-  height: calc(100px + (180 - 100) * ((100vw - 320px) / (1600 - 320)));
+  height: calc(100px + (180 - 100) * ((100vw - 360px) / (1600 - 360)));
 }
 .res {
-  margin-left: calc(30px + (50 - 30) * ((100vw - 320px) / (1600 - 320)));
+  margin-left: calc(30px + (50 - 30) * ((100vw - 360px) / (1600 - 360)));
 }
 /*@media (max-width: 991px) {
-  .container {
-    width: 700px;
-  }
-  #tabs .tabContent {   
-    width: 650px;
-  }
-  .sign {
-    display: flex;
-    margin-left: 50px;
-  }
-  img {    
-  margin-right: 0px;
-  }
+
 }*/
