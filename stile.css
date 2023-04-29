@@ -6,16 +6,19 @@ body {
   background-color: #f4f4f4;  
 }
 #tabs .tab {
-  margin-top: 20px;  
+  /*margin-top: calc(5px + (20 - 5) * ((100vw - 360px) / (1600 - 360))); */ 
   background-color: #C6C6C6;
   border-radius: 15px 15px 0 0;
   display: inline-block;
-  padding: 8px 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: calc(5px + (15 - 5) * ((100vw - 360px) / (1600 - 360)));
+  padding-right: calc(5px + (15 - 5) * ((100vw - 360px) / (1600 - 360)));
   cursor: pointer;
   position: relative;
   z-index: 5;
   font-family: Sans-serif; 
-  font-size: calc(16px + (24 - 16) * ((100vw - 360px) / (1600 - 360)));  
+  font-size: calc(12px + (24 - 12) * ((100vw - 360px) / (1600 - 360)));  
 }
 #tabs .whiteborder {
   border: 2px solid #E9E9E9;
@@ -32,7 +35,8 @@ p {
   margin: auto;
 }
 .title {
-  padding: calc(20px + (40 - 20) * ((100vw - 360px) / (1600 - 360))); 
+  padding-top: calc(20px + (40 - 20) * ((100vw - 360px) / (1600 - 360))); 
+  padding-bottom: calc(5px + (30 - 5) * ((100vw - 360px) / (1600 - 360))); 
   font-size: calc(30px + (40 - 30) * ((100vw - 360px) / (1600 - 360)));
   font-weight: 600;
 }
@@ -61,7 +65,7 @@ p {
 .subtitle {
   font-size: calc(24px + (24 - 16) * ((100vw - 360px) / (1600 - 360))); 
   font-weight: 600;
-  margin-top: calc(30px + (36 - 30) * ((100vw - 360px) / (1600 - 360)));
+  margin-top: calc(15px + (30 - 15) * ((100vw - 360px) / (1600 - 360)));
 }
 .source {  
   display: flex;
